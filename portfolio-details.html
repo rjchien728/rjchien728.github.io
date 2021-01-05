@@ -83,7 +83,7 @@
 
       <div class="container">
         <h2>Detection of Safety Equipment Violation</h2>
-        <div class="portfolio-details-container">
+        <div class="pt-2 portfolio-details-container">
           <div class="owl-carousel owl-theme portfolio-details-carousel">
             <!-- <img src="" class="img-fluid" alt=""> -->
             <div class="embed-responsive embed-responsive-16by9">
@@ -94,6 +94,11 @@
             <div class="embed-responsive embed-responsive-16by9">
               <iframe src="https://www.youtube.com/embed/YJkVnJjTC2Y" frameborder="0"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/PSvJHCVjtgs" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
           </div>
@@ -110,26 +115,21 @@
         </div>
 
         <div class="portfolio-description">
-          <h2>Tittle</h2>
+          <h2>Introduction</h2>
           <p>
-            In this paper, a two-stage method is proposed to automatically detect 3 kinds of PPE violations, including
-            non-hardhat-use, un-equipped with safety vest and bare to the waist. Combining object detection model and
-            classification model, our two-stage method can avoid feature loss of small-scale PPE to achieve better
-            accuracy.
+            These demo videos show that there are kinds of safety violation are detected, including not wearing helmet,
+            not wearing safety vest and being topless. After integrating it into the monitor system, the construction
+            manager can supervise the unsafe behavior of workers immediately. </p>
+          <p>
+            This project is also my master thesis. By combining object detection model and classification model, and
+            training them with 3000 images collected form site, the result can achieve over 0.9 precision and recall
+            in
+            our experiment.
           </p>
           <p>
-            First, the object detection model based on RetinaNet is adopted to detect the presence of worker in the
-            image. Then, by using InceptionNet as classification model, these worker images are input to identify the
-            violations of PPE use.</p>
-          <p>
-            This study collected 3015 site images to preform transfer learning. The results show that our method can
-            effectively detect PPE violations at the frame rate of 10 fps. When the image resolution of the worker is
-            120 pixels or more, both precision and recall can be above 0.9; while the resolution is only 60 pixels, it
-            could also achieve the precision of 0.8.
+            To get more detailed information, please visit <a href="https://hdl.handle.net/11296/x7n995">National
+              Digital Library of Theses and Dissertations</a>.
           </p>
-
-          <a href="https://hdl.handle.net/11296/x7n995">National Digital Library of Theses and Dissertations in
-            Taiwan</a>
         </div>
       </div>
     </section><!-- End Portfolio Details Section -->
