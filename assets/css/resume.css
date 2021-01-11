@@ -4,15 +4,17 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fafafa;
-  font: 12pt "Tahoma";
+  /* font: 12pt "Tahoma"; */
+  font-family: "Raleway", serif;
 }
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 .page {
-  width: 210mm;
-  min-height: 297mm;
+  width: 252mm;
+  min-height: 356.4mm;
+  /* max-height: 297mm; */
   padding: 0mm;
   margin: 10mm auto;
   border: 1px #d3d3d3 solid;
@@ -31,6 +33,7 @@ body {
   size: A4;
   margin: 0;
 }
+
 @media print {
   html,
   body {
@@ -38,6 +41,7 @@ body {
     height: 297mm;
   }
   .page {
+    padding: 10mm;
     margin: 0;
     border: initial;
     border-radius: initial;
@@ -48,28 +52,150 @@ body {
     page-break-after: always;
   }
 }
+/* -------------------------------------- */
+:root {
+  --main-color: rgb(36, 92, 129);
+  --main-font-size: 12pt;
+}
 
-/*------*/
+i {
+  color: var(--main-color);
+  font-size: 20pt;
+  /* background-color: var(--main-color); */
+}
+
+/* globe setting */
+p ul li {
+  font-size: var(--main-font-size);
+  font-family: Raleway;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 26pt;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 14pt;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+h3 {
+  font-size: 14pt;
+}
+
+h5 {
+  font-size: var(--main-font-size);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: var(--main-font-size);
+  color: var(--main-color);
+  font-weight: 500;
+  /* margin-bottom: 3px; */
+}
 
 .fullpage {
+  margin: 0px;
+  padding: 0px;
+}
+
+.row {
   margin: 0;
   padding: 0;
 }
 
+/* header */
+
 .resume-head {
   margin: 0px;
-  padding: 20px;
+  padding: 30px;
+  /* padding-top: 30px; */
+  padding-bottom: 20px;
   border-bottom: 3px solid;
+  border-color: var(--main-color);
 }
 
+.name {
+  padding: 0;
+}
 .contacts {
+  padding: 0;
   text-align: right;
+  font-size: var(--main-font-size);
+}
+.contacts i {
+  background-color: #fff;
+  color: var(--main-color);
+  font-size: var(--main-font-size);
+}
+
+/* resume contents */
+.section-left {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+.section-right {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
 }
 
 .resume-section {
   padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .resume-section .title {
-  border-bottom: 3px solid;
+  border-bottom: 2px solid;
+  border-color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.resume-section .date {
+  padding: 0;
+}
+
+.resume-section .content {
+  padding: 0;
+  padding-left: 20px;
+}
+
+.resume-section ul {
+  padding-left: 20px;
+}
+
+.resume-section .project {
+  /* padding-left: 20px; */
+  padding-top: 10px;
+}
+
+.skills .col-6 {
+  padding: 0px;
+}
+.skills .bar {
+  text-align: right;
+}
+.skills i {
+  font-size: var(--main-font-size);
+}
+.skills .empty {
+  color: rgb(209, 209, 209);
+}
+
+.year {
+  font-style: italic;
+}
+
+.coursework {
+  color: #444;
 }
