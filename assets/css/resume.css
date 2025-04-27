@@ -82,18 +82,18 @@ p {
 }
 
 h1 {
-  font-size: 26pt;
+  font-size: 20pt;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 14pt;
+  font-size: 12pt;
   text-transform: uppercase;
   color: var(--main-color);
 }
 
 h3 {
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 h5 {
