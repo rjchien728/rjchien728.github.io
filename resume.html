@@ -16,6 +16,14 @@
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
     <link href="assets/css/resume.css" rel="stylesheet" />
     <title>resume-JungChun Chien</title>
+    <style>
+        @media print {
+            .resume-section {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,39 +32,35 @@
             <div class="resume-head row">
                 <div class="name col">
                     <h1>Roger Chien</h1>
-                    <h3>簡榮均</h3>
-                    <h2>Backend Engineer</h2>
+                    <!-- <h3>簡榮均</h3> -->
+                    <h2>Senior Backend Engineer</h2>
                 </div>
                 <div class="contacts col">
-                    <!-- <div>rjchien728@gmail.com<i class="icofont-envelope pl-3"></i></div> -->
-                    <!-- <div>09********<i class="icofont-iphone pl-3"></i></div> -->
-                    <!-- <div>
-                        <a href="https://rjchien728.github.io"
-                            style="color:black ;text-decoration: none">https://rjchien728.github.io</a><i
-                            class="icofont-globe pl-3"></i>
-                    </div> -->
+                    <!-- <div>rjchien728@gmail.com<i class="icofont-envelope pl-3"></i></div>
+                    <div>09********<i class="icofont-iphone pl-3"></i></div> -->
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-8 section-left">
-                    <!-- <div class="resume-section">
+                <div class="col-12 section-left">
+                    <div class="resume-section">
                         <div class="title">
                             <h3>
                                 <i class="fas fa-user-tie"></i>
                                 <span>Summary</span>
                             </h3>
                         </div>
-                        <p>
-                            I have solid skills in backend development, especially in the database. I also have
-                            experience in deep learning and computer vision. Besides, I am familiar with using data to
-                            shoot problem and evaluate the business impact of my works.
-                        </p>
-                        <p>
-                            Being proactive, having strong responsibility, willing to communicate and
-                            being enthusiastic to help others are the feedback I always get at work.
-                        </p>
-                    </div> -->
+                        <ul>
+                            <li>Proficient in backend development using Golang, with experience designing scalable,
+                                event-driven systems for high-concurrency, real-time applications.</li>
+                            <li>Strong expertise in database and search infrastructure, including schema design, query
+                                optimization, and scaling strategies across relational, NoSQL, and search platforms.
+                            </li>
+                            <li>Familiar with cloud-native technologies, containerization, and deployment on GCP using
+                                Docker and Cloud Run.</li>
+                        </ul>
+
+                    </div>
                     <div class="resume-section">
                         <div class="title">
                             <h3>
@@ -65,100 +69,57 @@
                             </h3>
                         </div>
                         <div class="row">
-                            <div class="col-2 date">Jul 2022 - Now</div>
-                            <div class="col-10 content">
-                                <h6>Backend Engineer</h6>
-                                <h5>17 Live</h5>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <h6>17 Live - Senior Backend Engineer </h6>
+                                    <h5 class="ml-auto">Jul 2022 - Present</h5>
+                                </div>
                                 <ul>
-                                    <li>
-                                        Expanded the current PK functionality by introducing invitation and scheduling
-                                        features, enabling the operations to organize a broader range of campaigns.
+                                    <li>Designed a reusable mission system by standardizing events and enabling
+                                        real-time configurable goals, significantly improving scalability and
+                                        maintainability.</li>
+                                    <li>Designed a unified, highly decoupled reward service to consolidate diverse
+                                        reward systems, enabling scalable, extensible, and reusable reward management
+                                        across the platform.</li>
+                                    <li>Led the migration from Elasticsearch to MongoDB Atlas Search, optimizing
+                                        multilingual search and improving query performance by 60%.</li>
+                                    <li>Optimized database performance by improving schema design, creating compound
+                                        indexes, and tuning queries to reduce storage usage and enhance query speed.
                                     </li>
-                                    <li>
-                                        Incorporated inventory-restricted gifts into the existing gift system.
+                                    <li>Refactored inefficient Redis usage and introduced team-wide guidelines to
+                                        enhance system performance, resource efficiency, and long-term maintainability.
                                     </li>
-                                    <!-- <li>
-                                        Implemented vliver model file upload system.
-                                    </li> -->
-                                    <li>
-                                        Implemented a feature enabling direct clipping of short videos from the
-                                        livestream.
-                                    </li>
-                                    <li>
-                                        Designed and implemented a feature to show event rankings in real-time during
-                                        the livestream.
-                                    </li>
-                                    <!-- <li>
-                                        Analyzed user-reported bugs and implemented effective solutions to improve
-                                        user experience.
-                                    </li> -->
-                                    <li>
-                                        Leverage knowledge: Golang, MongoDB, Redis.
-                                    </li>
+                                    <li>Optimized internal microservice communication by tuning HTTP client timeout and
+                                        connection pool settings, significantly improving response speed and system
+                                        reliability.</li>
+                                    <li>Developed a configurable lottery system with randomized prizes and dynamic
+                                        probability adjustment based on user history.</li>
+                                    <li>Implemented a clip system for creating short videos from live streams, optimized
+                                        database indexing, and enabled personalized clip recommendations.</li>
+                                    <li>Delivered technically challenging features and resolved critical issues,
+                                        ensuring continuous product stability and performance improvements.</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-2 date">Mar 2021 - Jun 2022</div>
-                            <div class="col-10 content">
-                                <h6>Backend Engineer</h6>
-                                <h5>Pinkoi</h5>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <h6>Pinkoi - Backend Engineer </h6>
+                                    <h5 class="ml-auto">Mar 2021 - Jun 2022</h5>
+                                </div>
                                 <ul>
-                                    <li>
-                                        Designed and developed daily sign-in and weekly mission feature.
-                                    </li>
-                                    <!-- <li>
-                                        Developed personalized system EDMs and conducted A/B testing to find the
-                                        best user recalling strategy.
-                                    </li>
-                                    <li>
-                                        Developed a framework to decrease the development effort when setting up new
-                                        notifications.
-                                    </li> -->
-                                    <li>
-                                        Developed personalized system EDMs and expanded the email/app-push preference
-                                        setting.
-                                    </li>
-                                    <!-- <li>
-                                        Responsible for seasonal campaigns and designed a light-weight login approach
-                                        for external collaboration.
-                                    </li> -->
-                                    <li>
-                                        Leverage knowledge: Python, MySQL, Memcached.
-                                    </li>
+                                    <li>Designed and developed a daily sign-in and weekly mission system, using
+                                        data-driven recommendations to guide users toward personalized product
+                                        discovery.</li>
+                                    <li>Implemented personalized EDM and app-push notifications, collaborating with the
+                                        analyst team to optimize engagement strategies through A/B testing.</li>
+                                    <li>Refactored notification preference settings to allow users to customize alerts
+                                        for personalized content, enhancing user experience.</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-2 date">Jul 2017 - Sep 2017</div>
-                            <div class="col-10 content">
-                                <h6>Software Developer, Intern</h6>
-                                <h5>TYLin International</h5>
-                                <ul>
-                                    <li>
-                                        Developed a desktop application for archiving historical
-                                        construction drawings.
-                                    </li>
-                                    <li>
-                                        Leverage knowledge: C#, Windows Form, MSSQL.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <div class="row">
-                            <div class="col-2 date">Mar 2016 - Sep 2016</div>
-                            <div class="col-10 content">
-                                <h6>BIM Engineer</h6>
-                                <h5>TYLin International</h5>
-                                <ul>
-                                    <li>
-                                        Developed plugins of construction software
-                                        to simplify the work processes and automated brige modeling.
-                                    </li>
-                                    <li>Leverage knowledge: C#, Excel VBA.</li>
-                                </ul>
-                            </div>
-                        </div> -->
+
+
                     </div>
 
                     <div class="resume-section">
@@ -168,66 +129,46 @@
                                 <span> Personal Projects </span>
                             </h3>
                         </div>
-                        <div class="project">
-                            <h6>Product Scraping Notification System</h6>
-                            <ul>
-                                <li>
-                                    Developed a web scraping system to gather product information from designated
-                                    websites.
-                                </li>
-                                <li>
-                                    Crafted and developed a Next.js website to showcase products and offer search
-                                    functionality.
-                                </li>
-                                <li>
-                                    Utilized: CloudRun, Next.js, Typescript
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="project">
-                            <h6>USDT Third-party Payment</h6>
-                            <ul>
-                                <li>
-                                    Designed API and workflow for a third-party payment system.
-                                </li>
-                                <li>
-                                    Utilized: Golang, MySQL
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="project">
-                            <h6>Computer Vision Application using Deep Learning</h6>
-                            <ul>
-                                <li>
-                                    Integrated and trained an object detection and a classification model to
-                                    recognize safety equipment from CCTV image in construction site.
-                                </li>
-                                <li>
-                                    Utilized: Python, Pytorch
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- <div class="project">
-                            <h6>Discord Bot </h6>
-                            <ul>
-                                <li>
-                                    Developed a command bot to reduce manual affordance for channel manager.
-                                </li>
-                                <li>
-                                    Using google sheets as an opening database which reserves flexibility for users to
-                                    manipulate the data.
-                                </li>
-                                <li>
-                                    Utilized: Nodejs
-                                </li>
-                            </ul>
-                        </div> -->
 
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <h6>Product Price Tracking System</h6>
+                                </div>
+                                <ul>
+                                    <li>Developed a cloud-based crawling system to periodically track product
+                                        information and price changes across multiple e-commerce platforms.</li>
+                                    <li>Implemented backend APIs for product listing, filtering, and keyword-based
+                                        search to support efficient data access.</li>
+                                    <li>Built a web interface to display product data and historical price trends, and
+                                        integrated notification features for timely updates.</li>
+                                </ul>
+                            </div>
+                            <!-- <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <h6>USDT Third-party Payment</h6>
+                                </div>
+                                <ul>
+                                    <li>
+                                        Designed API and workflow for a third-party payment system.
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <!-- <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <h6>Computer Vision Application using Deep Learning</h6>
+                                </div>
+                                <ul>
+                                    <li>
+                                        Integrated and trained an object detection and a classification model to
+                                        recognize safety equipment from CCTV image in construction site.
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
                     </div>
-                </div>
 
-                <!-- Education -->
-                <div class="col-4 section-right">
+                    <!-- Education -->
                     <div class="resume-section">
                         <div class="title">
                             <h3>
@@ -235,71 +176,39 @@
                                 <span>Education</span>
                             </h3>
                         </div>
-                        <div class="edu row">
-                            <h6>
-                                Master of Civil Engineering, Computer-Aided Engineering
-                                Division
-                            </h6>
-                            <div class="year">2016 - 2019</div>
-                            <h5>National Taiwan University</h5>
-                            <div class="coursework">
-                                Coursework:
-                                <ul>
-                                    <li>Object-oriented Programming</li>
-                                    <li>Data Structures & Algorithms</li>
-                                    <li>Web Development</li>
-                                    <li>Database Management System</li>
-                                    <li>Deep Learning for Computer Vision</li>
-                                </ul>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <h6 style="width: 100px;">2016 - 2019</h6>
+                                    <h5>Master in Computer-Aided Engineering, Department of Civil Engineering, National
+                                        Taiwan University</h5>
+                                </div>
                             </div>
                         </div>
-                        <div class="edu row">
-                            <h6>Bachelor of Civil Engineering</h6>
-                            <div class="year">2011 - 2016</div>
-                            <h5>National Taiwan University</h5>
-                            <div class="coursework">Coursework:
-                                <ul>
-                                    <li> Building Information Modeling </li>
-                                    <li> Engineering Graphics </li>
-                                    <li> Unity Game Development </li>
-                                </ul>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <h6 style="width: 100px;">2011 - 2015</h6>
+                                    <h5>Bachelor of Civil Engineering, National Taiwan University</h5>
+                                </div>
                             </div>
-
                         </div>
                     </div>
-
-
-                    <!-- Languages -->
-                    <!-- <div class="resume-section">
-                        <div class="title">
-                            <h3>
-                                <i class="fas fa-globe-asia"></i>
-                                <span> Languages </span>
-                            </h3>
-                        </div>
-                        <div class="lang">
-                            <span class="row">Mandarin - Native</span>
-                            <span class="row">English - Advanced</span>
-                            <span class="row">Japanese - Intermediate</span>
-                            <span class="row">German - Elementary </span>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
