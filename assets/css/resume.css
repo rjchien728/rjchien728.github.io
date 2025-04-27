@@ -180,7 +180,8 @@ h6 {
 }
 
 .resume-section ul {
-  padding-left: 20px;
+  padding-left: 15px;
+  margin-bottom: 0;
 }
 
 .resume-section .project {
