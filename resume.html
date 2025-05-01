@@ -51,13 +51,15 @@
                             </h3>
                         </div>
                         <ul>
-                            <li>Proficient in backend development using Golang, with experience designing scalable,
-                                event-driven systems for high-concurrency, real-time applications.</li>
-                            <li>Strong expertise in database and search infrastructure, including schema design, query
-                                optimization, and scaling strategies across relational, NoSQL, and search platforms.
-                            </li>
-                            <li>Familiar with cloud-native technologies, containerization, and deployment on GCP using
-                                Docker and Cloud Run.</li>
+                            <li>Proficient in backend development using Golang, with hands-on experience building
+                                scalable, event-driven systems.</li>
+                            <li>Strong expertise in database and search infrastructure, including MySQL, MongoDB, Redis,
+                                and Elasticsearch, with solid experience in schema design, query optimization, and
+                                performance tuning.</li>
+                            <li>Skilled in cloud-native technologies (Cloud Run, Pub/Sub) and containerization (Docker,
+                                Kubernetes), with practical deployment experience on GCP.</li>
+                            <li>Experienced in CI/CD pipelines, observability (Datadog monitoring), and writing clean,
+                                reliable unit tests; strong in cross-team collaboration and clear communication.</li>
                         </ul>
 
                     </div>
@@ -75,29 +77,33 @@
                                     <h5 class="ml-auto">Jul 2022 - Present</h5>
                                 </div>
                                 <ul>
-                                    <li>Designed a reusable mission system by standardizing events and enabling
-                                        real-time configurable goals, significantly improving scalability and
-                                        maintainability.</li>
-                                    <li>Designed a unified, highly decoupled reward service to consolidate diverse
-                                        reward systems, enabling scalable, extensible, and reusable reward management
-                                        across the platform.</li>
+                                    <li>Designed a reusable mission system with real-time configurable goals, built on a
+                                        high-availability Pub/Sub architecture sustaining 400+ events/sec with sub-50ms
+                                        latency, scalable for future demand.</li>
+                                    <li>Built a unified, highly decoupled reward service managing over 10 reward types
+                                        and extensible to support third-party physical vouchers, enabling flexible,
+                                        reusable reward processing across the platform.</li>
                                     <li>Led the migration from Elasticsearch to MongoDB Atlas Search, optimizing
-                                        multilingual search and improving query performance by 60%.</li>
-                                    <li>Optimized database performance by improving schema design, creating compound
-                                        indexes, and tuning queries to reduce storage usage and enhance query speed.
+                                        multilingual search and improving query speed by 75%, achieving sub-100ms
+                                        response times.</li>
+                                    <li>Refactored Redis usage and established team-wide best practices to improve
+                                        resource efficiency and reduce infrastructure costs.</li>
+                                    <li>Optimized database performance by tuning indexes to accelerate query speed,
+                                        adding TTL indexes to control collection size, and merging redundant indexes to
+                                        reduce storage usage by 50%.</li>
+                                    <li>Enhanced microservice communication by tuning HTTP client timeout and connection
+                                        pool settings, cutting 500 error rate by over 90%.</li>
+                                    <li>Developed a reliable, real-time lottery system with sub-40ms response time,
+                                        supporting all live streams and designed for scalable, high-concurrency use.
                                     </li>
-                                    <li>Refactored inefficient Redis usage and introduced team-wide guidelines to
-                                        enhance system performance, resource efficiency, and long-term maintainability.
-                                    </li>
-                                    <li>Optimized internal microservice communication by tuning HTTP client timeout and
-                                        connection pool settings, significantly improving response speed and system
-                                        reliability.</li>
-                                    <li>Developed a configurable lottery system with randomized prizes and dynamic
-                                        probability adjustment based on user history.</li>
-                                    <li>Implemented a clip system for creating short videos from live streams, optimized
-                                        database indexing, and enabled personalized clip recommendations.</li>
-                                    <li>Delivered technically challenging features and resolved critical issues,
-                                        ensuring continuous product stability and performance improvements.</li>
+                                    <!-- <li>Built a real-time clip system enabling users to create and share short videos
+                                        from ongoing live streams, with personalized clip recommendations.</li> -->
+                                    <li>Enabled cross-platform multi-host streaming by integrating RTMP and WebRTC,
+                                        bridging protocols to support seamless live collaboration between OBS and mobile
+                                        streamers.</li>
+                                    <li>Delivered technically challenging features and resolved critical issues to keep
+                                        the product stable and performant, while setting up Datadog dashboards to track
+                                        QPS and latency in real time.</li>
                                 </ul>
                             </div>
                         </div>
@@ -108,13 +114,16 @@
                                     <h5 class="ml-auto">Mar 2021 - Jun 2022</h5>
                                 </div>
                                 <ul>
-                                    <li>Designed and developed a daily sign-in and weekly mission system, using
-                                        data-driven recommendations to guide users toward personalized product
-                                        discovery.</li>
-                                    <li>Implemented personalized EDM and app-push notifications, collaborating with the
-                                        analyst team to optimize engagement strategies through A/B testing.</li>
-                                    <li>Refactored notification preference settings to allow users to customize alerts
-                                        for personalized content, enhancing user experience.</li>
+
+                                    <li>Built a reliable user engagement feature to boost retention, using Python,
+                                        MySQL, Memcached, and scheduled workers, designed for high stability and fault
+                                        tolerance.</li>
+                                    <li>Implemented high-volume personalized EDM and app-push notifications using
+                                        multi-threading, with A/B testing to optimize engagement and boost user
+                                        retention.</li>
+                                    <li>Rebuilt the notification system to support personalized, user-defined
+                                        preferences, redesigning data models and APIs for greater flexibility and
+                                        maintainability.</li>
                                 </ul>
                             </div>
                         </div>
@@ -136,12 +145,13 @@
                                     <h6>Product Price Tracking System</h6>
                                 </div>
                                 <ul>
-                                    <li>Developed a cloud-based crawling system to periodically track product
-                                        information and price changes across multiple e-commerce platforms.</li>
-                                    <li>Implemented backend APIs for product listing, filtering, and keyword-based
-                                        search to support efficient data access.</li>
-                                    <li>Built a web interface to display product data and historical price trends, and
-                                        integrated notification features for timely updates.</li>
+                                    <li>Built a cloud-based crawling system with Cloud Run (Dockerized) to regularly
+                                        track product details and price changes across multiple e-commerce platforms.
+                                    </li>
+                                    <li>Developed backend APIs (Cloud Run, Docker, MongoDB) for product listing,
+                                        filtering, and keyword search to provide fast and flexible data access.</li>
+                                    <li>Created a web interface with Next.js to display product data and historical
+                                        price trends, with integrated notifications for timely updates.</li>
                                 </ul>
                             </div>
                             <!-- <div class="col-12">

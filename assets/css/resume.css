@@ -66,7 +66,7 @@ body {
 
 i {
   color: var(--main-color);
-  font-size: 20pt;
+  font-size: 14pt;
   /* background-color: var(--main-color); */
 }
 
@@ -74,7 +74,7 @@ i {
 p ul li {
   font-size: var(--main-font-size);
   font-family: Raleway;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 p {
@@ -159,7 +159,7 @@ h6 {
 }
 
 .resume-section {
-  padding: 20px;
+  padding: 12px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
