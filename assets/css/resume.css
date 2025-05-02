@@ -3,7 +3,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: #ffffff;
   /* font: 12pt "Tahoma"; */
   font-family: "Raleway", serif;
 }
@@ -211,4 +211,10 @@ h6 {
 
 .coursework {
   color: #444;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--main-color);
+  font-family: 'Lato', sans-serif;
 }
