@@ -214,7 +214,7 @@ h6 {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 500;
   color: var(--main-color);
   font-family: 'Lato', sans-serif;
 }
